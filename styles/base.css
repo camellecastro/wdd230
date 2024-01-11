@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #163020;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+}
+main, header, footer {
+    max-width: 1100px;
+	margin: 0 auto;
+    word-wrap: break-word;
+}
+
+/* header */
+header {
+	background-color: #304D30;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+    height: auto;
+}
+
+.my-image {
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 150px;
+}
+
+.name {
+    color: #EEF0E5;
+    font-size: 2rem;
+}
+
+/* navigation */
+nav {
+    max-width: 1100px;
+	background-color: #163020;
+	margin: 0 auto;
+}
+nav ul {
+	list-style-type: none;
+    padding: 0;
+}
+nav a {
+	display: block;
+	color: #EEF0E5;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #EEF0E5;
+    color: #163020;
+}
+
+.active {
+	color: #163020;
+    background: #EEF0E5;
+}
+
+/* main */
+main {
+    padding: 1rem;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+main h1 {
+    font-size: 1.6rem;
+    border-bottom: 1.5px solid #163020;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 15px;
+    margin: 10px;
+    border: 2px #304D30 solid;
+    background: #EEF0E5;
+    min-height: 100px;
+    width: auto;
+}
+.card h2 {
+    padding: 15px;
+    border-bottom: 2px solid #163020;
+    text-align: center;
+    background: #B6C4B6;
+    border-radius: 15px 15px  0 0;
+}
+.card ul {
+    list-style: none;
+    padding: 15px;   
+}
+.card a {
+    text-decoration: none;
+    color: #304D30;
+}
+
+.card a:hover {
+    color: #163020;
+}
+
+
+.activities {
+    flex-grow: 2;
+}
+
+.information {
+    min-width: 300px;
+}
+
+/* footer */
+footer {
+    background-color: #EEF0E5;
+    color: #163020;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+.align {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.flag {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+#year {
+  margin: 0 5px ;  
+}
+
+#lastModified {
+    color: #304D30;
+}

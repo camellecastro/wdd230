@@ -3,20 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descriptipn" content="description of page using keywoards">
+    <title>
+        Camelle Castro - WDD 230 - Web Frontend Development
+    </title>
+    <meta name="description" content="Course Assignment Portal of Camelle Castro for WDD 230 - Web Frontend Development I">
     <meta name="author" content="Camelle Castro">
-    <title> Meaningful Title</title>
-    <link rel="stylesheet" href="styles/filename">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header><h1>Page Title - Heading 1</h1></header>
-    <nav></nav>
-    <main>
-        <p><a href="week01/holygrail.html">Week 01 - Grid Layout Activity</a></p>
-        <p><a href="https://codepen.io/camellecastro/pen/abMmpjy">Week 01 - Applied JavaScript Activity</a></p>
-        <p><a href="week01/media-query.html">Week 01 - CSS Media Query</a></p>
+    <header>
+        <img class="my-image" src="images/self-portrait.jpg" alt="Self Portrait of Camelle Castro">
+        <span class="name">
+            Camelle Castro
+        </span>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <h1>WDD 230: Web Frontend Development</h1>
+        <section class="card activities">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li>
+                    Week 01: 
+                    <a href="week01/holygrail.html">Grid Layout</a> | 
+                    <a href="week01/media-query.html">Media Query</a> | 
+                    <a href="https://codepen.io/camellecastro/pen/abMmpjy">JS Pen</a>
+                </li>
+                <li>
+                    Week 02: <a href="#"></a>
+                </li>
+                <li>
+                    Week 03: <a href="#"></a>
+                </li>
+                <li>
+                    Week 04: <a href="#"></a>
+                </li>
+                <li>
+                    Week 05: <a href="#"></a>
+                </li>
+                <li>
+                    Week 06: <a href="#"></a>
+                </li>
+            </ul>
+        </section>
+        <section class="card information">
+            <h2>Information</h2>
+            <span id="information"></span>
+        </section>
     </main>
-    <footer>Camelle Castro | BYU-Idaho | WDD 230 - Winter 2024</footer>
-    <script src="scripts/"></script>
+    <footer>
+        <p class="align">&copy; <span id="year"></span> Camelle Castro | Canada <img class="flag" src="images/canada.png" alt="canada flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
