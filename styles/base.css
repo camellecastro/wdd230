@@ -109,15 +109,6 @@ main h1 {
     color: #163020;
 }
 
-
-.activities {
-    flex-grow: 2;
-}
-
-.information {
-    min-width: 300px;
-}
-
 /* footer */
 footer {
     background-color: #EEF0E5;
