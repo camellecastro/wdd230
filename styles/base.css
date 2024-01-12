@@ -32,6 +32,7 @@ header {
     border-radius: 10px;
     margin-right: 20px;
     height: 150px;
+    width: auto;
 }
 
 .name {
@@ -69,13 +70,13 @@ nav a:hover {
 
 /* main */
 main {
-    padding: 1rem;
+    padding: .75rem;
     justify-content: center;
     max-width: 1000px;
 }
 
 main h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border-bottom: 1.5px solid #163020;
     padding: 15px;
     margin-bottom: 20px;

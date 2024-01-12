@@ -2,6 +2,9 @@
     .name {
         font-size: 2.5rem;
     }
+    .my-image {
+        height: 160px;
+    }
 	nav ul {
 		display: flex;
 	}
@@ -11,6 +14,7 @@
     main {
         display: flex;
         flex-wrap: wrap;
+        padding: 1rem;
     }
     main h1 {
         font-size: 2rem;
