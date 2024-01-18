@@ -35,4 +35,15 @@
     .information {
         min-width: 300px;
     }
+
+    /* larger.css */
+    .name.dark-mode {
+        color: #fff; /* Light name text color */
+    }
+
+    .navigation.dark-mode a:hover {
+        background-color: #fff; /* Light link hover background color */
+        color: #1a1a1a; /* Dark link hover text color */
+    }
+
 }

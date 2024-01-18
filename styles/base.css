@@ -112,7 +112,6 @@ a#menu.show{
     display: flex;
     justify-content: right;
     align-items: center;
-    color: #163020;
     padding: 0 15px ;
     border-bottom: none;
     background-color: #163020;
@@ -186,3 +185,118 @@ footer {
 #lastModified {
     color: #304D30;
 }
+
+/* dark mode */
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.toggle-container {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer; 
+    margin: 10px auto;
+}
+
+.toggle-input:checked + .toggle-label {
+    background-color: #6d6f6d; 
+}
+
+.toggle-label::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label::before {
+    transform: translateX(20px);
+}
+
+/* base.css */
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+body.dark-mode main h1 {
+    border-bottom-color: #fff; /* Choose your desired color for the border-bottom in dark mode */
+}
+
+header.dark-mode {
+    background-color: #2d2d2d; /* Dark header background color */
+}
+
+nav.dark-mode {
+    background-color: #1a1a1a; /* Dark navigation background color */
+}
+
+main.dark-mode h1 {
+    border-bottom: #eae3e3 solid 1px;
+}
+
+.navigation.dark-mode a {
+    color: #fff; /* Light link text color */
+}
+
+.card.dark-mode {
+    background: #2d2d2d; /* Dark card background color */
+    border: 2px #1a1a1a solid; /* Darker border color */
+}
+
+.card.dark-mode h2 {
+    border-bottom: #EEF0E5;
+    background: #3a3a3a; /* Darker heading background color */
+    color: #fff; /* Light heading text color */
+}
+
+.card.dark-mode ul {
+    color: #fff; /* Light list item text color */
+}
+
+.card.dark-mode a {
+    color: #fff; /* Light list item text color */
+}
+
+.dark-mode #menu.show::before {
+    color: #ddd;
+    background-color: #1a1a1a;
+}
+.dark-mode #menu::before {
+    color: #ddd;
+    border-bottom: #ddd solid 1px;
+}
+
+
+footer.dark-mode #lastModified{
+    color: #848181;
+}
+
+footer.dark-mode {
+    background: #2d2d2d; /* Dark footer background color */
+    color: #fff; /* Light footer text color */
+}
+
