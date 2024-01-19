@@ -36,14 +36,14 @@
         min-width: 300px;
     }
 
-    /* larger.css */
+    /* dark mode */
     .name.dark-mode {
-        color: #fff; /* Light name text color */
+        color: #fff; 
     }
 
     .navigation.dark-mode a:hover {
-        background-color: #fff; /* Light link hover background color */
-        color: #1a1a1a; /* Dark link hover text color */
+        background-color: #fff; 
+        color: #1a1a1a;
     }
 
 }

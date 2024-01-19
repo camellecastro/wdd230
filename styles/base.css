@@ -194,7 +194,6 @@ footer {
 }
 
 .toggle-container {
-    /* position: relative; */
     display: flex;
     align-items: center;
 }
@@ -209,7 +208,8 @@ footer {
     justify-content: space-around;
     width: 50px;
     height: 30px;
-    background-color: #ddd;
+    color: #fff;
+    background-color: #3a3a3a;
     border-radius: 15px;
     position: relative;
     cursor: pointer; 
@@ -217,7 +217,7 @@ footer {
 }
 
 .toggle-input:checked + .toggle-label {
-    background-color: #6d6f6d; 
+    background-color: #1a1a1a; 
 }
 
 .toggle-label::before {
@@ -237,13 +237,14 @@ footer {
 }
 
 /* base.css */
+
 body.dark-mode {
     background-color: #1a1a1a; /* Dark background color */
     color: #fff; /* Light text color */
 }
 
 body.dark-mode main h1 {
-    border-bottom-color: #fff; /* Choose your desired color for the border-bottom in dark mode */
+    border-bottom-color: #fff; 
 }
 
 header.dark-mode {
@@ -254,49 +255,38 @@ nav.dark-mode {
     background-color: #1a1a1a; /* Dark navigation background color */
 }
 
-main.dark-mode h1 {
-    border-bottom: #eae3e3 solid 1px;
-}
-
-.navigation.dark-mode a {
+.navigation.dark-mode a,
+.card.dark-mode ul,
+.card.dark-mode a {
     color: #fff; /* Light link text color */
 }
 
 .card.dark-mode {
-    background: #2d2d2d; /* Dark card background color */
-    border: 2px #1a1a1a solid; /* Darker border color */
+    background: #2d2d2d; 
+    border: #1a1a1a solid; 
 }
 
 .card.dark-mode h2 {
-    border-bottom: #EEF0E5;
-    background: #3a3a3a; /* Darker heading background color */
-    color: #fff; /* Light heading text color */
-}
-
-.card.dark-mode ul {
-    color: #fff; /* Light list item text color */
-}
-
-.card.dark-mode a {
-    color: #fff; /* Light list item text color */
+    border-bottom: #fff;
+    background: #3a3a3a; 
+    color: #fff; 
 }
 
 .dark-mode #menu.show::before {
-    color: #ddd;
+    color: #fff;
     background-color: #1a1a1a;
 }
 .dark-mode #menu::before {
-    color: #ddd;
-    border-bottom: #ddd solid 1px;
+    color: #fff;
+    border-bottom: #fff solid;
 }
 
-
 footer.dark-mode #lastModified{
-    color: #848181;
+    color: #c4c4c4;
 }
 
 footer.dark-mode {
-    background: #2d2d2d; /* Dark footer background color */
-    color: #fff; /* Light footer text color */
+    background: #2d2d2d; 
+    color: #fff; 
 }
 
