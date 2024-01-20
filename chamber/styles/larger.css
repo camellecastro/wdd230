@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    .name {
+        font-size: 2.5rem;
+    }
+    .my-image {
+        max-width: 1100px;
+        height: 160px;
+    }
+    .navigation {
+		display: flex;
+        max-width: 1100px;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    main h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .activities {
+        flex-grow: 2;
+    }
+    .information {
+        min-width: 300px;
+    }
+
+}
