@@ -144,7 +144,7 @@ a#menu.show{
 /* Hero section */
 .hero {
     position: relative;
-    background: url(https://images.unsplash.com/photo-1617336422396-e1dfc4210ec5?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+    background: url("../images/hero.jpg") no-repeat center center/cover;
     height: auto;
 }
 .hero::before {
@@ -364,9 +364,5 @@ footer a:hover {
     height: 50px;
 }
 
-.actions img {
-    height: 100px;
-    width: auto;
-}
 
 
