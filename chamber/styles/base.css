@@ -305,7 +305,7 @@ footer {
     max-width: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 1fr 1fr;
+    
     align-items: center;
     margin: 0 auto;
     text-align: left;
@@ -350,5 +350,23 @@ footer a:hover {
     color: #ffff;
 }
 
+.spotlight-img,
+.event-img {
+    height: 50px;
+    width: auto;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-name {
+    height: 50px;
+}
+
+.actions img {
+    height: 100px;
+    width: auto;
+}
 
 
