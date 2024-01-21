@@ -21,28 +21,29 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header class="container header">
-        <img src="images/logo.png" alt="icon and name of naguilian chamber of commerce" height="200px" width="200px">
+    <header class="header">
+        <img class="logo" src="images/logo.png" alt="icon and name of naguilian chamber of commerce" height="100px">
+        <img class="logo-name" src="images/logo-name.png" alt="logo name" height="50px">
         <div class="social-icons">
             <a href="#">
-                <img src="images/facebook.png" alt="facebook logo">
+                <img class="icons" src="images/facebook.png" alt="facebook logo">
             </a>
             <a href="#">
-                <img src="images/twitter.png" alt="twitter logo">
+                <img class="icons" src="images/twitter.png" alt="twitter logo">
             </a>
             <a href="#">
-                <img src="images/linkedin-logo.png" alt="linkedin logo">
+                <img class="icons" src="images/linkedin-logo.png" alt="linkedin logo">
             </a>
             <a href="#">
-                <img src="images/youtube.png" alt="youtube logo">
+                <img class="icons" src="images/youtube.png" alt="youtube logo">
             </a>
             <a href="#">
-                <img src="images/instagram.png" alt="instagram logo">
+                <img class="icons" src="images/instagram.png" alt="instagram logo">
             </a>
         </div>
+        <!-- for hamburger menu -->
+        <a href="#" id="menu"></a>
     </header>
-    <!-- for hamburger menu -->
-    <a href="#" id="menu"></a>
     <nav>
         <ul class="navigation container">
             <li><a class="active" href="index.html">Home</a></li>
@@ -51,86 +52,128 @@
             <li><a href="#">Join</a></li>
         </ul>
     </nav>
-    <main class="main-content container">
-        <div class="hero">
-            <h1>ELEVATE YOUR BUSINESS JOURNEY WITH NAGUILIAN CHAMBER OF COMMERCE</h1>
-            <p>Join a dynamic community of local entrepreneurs! Unleash new opportunities, forge valuable connections, and stay ahead of the curve with exclusive events and insights. Your success story begins here – Become a member today!</p>
-            <!-- call to action -->
-            <a href="#" class="cta-button">Join</a>
-        </div>
-        <article>
-            <h2>Welcome to the Naguilian Chamber of Commerce - Your Gateway to Business Synergy!</h2>
-            <p>At the heart of Naguilian's vibrant business community, the Naguilian Chamber of Commerce stands as the pulse, connecting local entrepreneurs and fostering collaboration. Our mission is to be the central hub for business synergy, ensuring that you, as a business owner, have the resources and connections needed to thrive.</p>
-        </article>
-        <section class="card weather">
-
-        </section>
-        <section class="actions">
-            <h2>What we do</h2>
-            <p>We support and enhance the Naguilian business community by advocating for conditions that ensure competitiveness, delivering exceptional network experiences, and connecting people and businesses—all in a socially responsible manner.</p>
-            <img src="images/discover.png" alt="magnifying glass with bulb inside" height="100px" width="100px">
-            <h3>Discover: Uncover Opportunities Beyond Limits</h3>
-            <p>Explore a world of possibilities! The gateway to exclusive events, forums, and resources tailored to elevate your business. Ignite innovation, stay informed, and unlock hidden potentials. Your journey to success starts with discovery!</p>
-            <a class="cta-btn" href="#">Learn more</a>
-            <img src="images/directory.png" alt="simple file folder illustration" height="100px" width="100px">
-            <h3>Directory: Connect with the Business Pulse of Naguilian</h3>
-            <p>Navigate the thriving business landscape of Naguilian effortlessly. Our comprehensive directory is a powerful tool for connecting with local entrepreneurs. Find collaborators, clients, and partners seamlessly. Empower your network – Dive into the Naguilian Chamber of Commerce Directory today!</p>
-            <a class="cta-btn" href="">See more</a>
-            <img src="images/join.png" alt="joing puzzel illustration" height="100px" width="100px">
-            <h3>Join: Be the Catalyst of Business Synergy</h3>
-            <p>Ready to amplify your business influence? Join the Naguilian Chamber of Commerce and become part of a dynamic community driving business synergy. Gain access to exclusive benefits, events, and a network of like-minded professionals. Together, let's shape the future of Naguilian's business landscape!</p>
-            <a class="cta-btn" href="">Learn more</a>
-        </section>
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-        </section>
-        <section class="spotlights">
-            <h2>Business Spotlights</h2>
-            <div class="card">
-                <h3>Stellar Innovations Ltd.</h3>
-                <p>
-                    Stellar Innovations Ltd. specializes in developing groundbreaking software solutions that not only meet the needs of today's businesses but anticipate the challenges of tomorrow. Their team of brilliant minds combines creativity and technical expertise to create products that redefine industries.
-
-                    Featured Product: QuantumLeap Solutions Suite
-
-                    One of their standout offerings is the QuantumLeap Solutions Suite – a comprehensive software package that seamlessly integrates AI, machine learning, and data analytics. This suite is designed to empower businesses in Naguilian to make informed decisions, streamline operations, and stay ahead of the competition.
-
-                    Stellar Innovations Ltd. doesn't just excel in the tech world; they are also deeply committed to community engagement. Through mentorship programs and educational initiatives, they actively contribute to the growth of the local tech ecosystem. They believe that a rising tide lifts all boats, and they are dedicated to fostering the next generation of innovators.
-                </p>
-            <img src="" alt="">
+    <main class="main-content">
+        <section class="hero">
+            <div class="gradient">
+                <div class="container">
+                    <h1>ELEVATE YOUR BUSINESS JOURNEY WITH NAGUILIAN CHAMBER OF COMMERCE</h1>
+                    <p>Join a dynamic community of local entrepreneurs! Unleash new opportunities, forge valuable connections, and stay ahead of the curve with exclusive events and insights. Your success story begins here – Become a member today!</p>
+                    <!-- call to action -->
+                    <a href="#" class="cta-button">Join</a>
+                </div>
             </div>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
-            <img src="" alt="">
-            <h3></h3>
+        </section>
+        <div class="container after-hero">
+            <section class="section-1">
+                <h2>Welcome to the Naguilian Chamber of Commerce - Your Gateway to Business Synergy!</h2>
+                <p>At the heart of Naguilian's vibrant business community, the Naguilian Chamber of Commerce stands as the pulse, connecting local entrepreneurs and fostering collaboration. Our mission is to be the central hub for business synergy, ensuring that you, as a business owner, have the resources and connections needed to thrive.</p>
+            </section>
+            <section class="card weather section-2">
+                <h2>WEATHER TODAY</h2>
+            </section>
+        </div>
+        <section class=" section-3">
+            <div class="actions-intro container">
+                <h2>What we do</h2>
+                <p>
+                    We support and enhance the Naguilian business community by advocating for conditions that ensure competitiveness, delivering exceptional network experiences, and connecting people and businesses—all in a socially responsible manner.
+                </p>
+            </div>
+            <div class="actions-container ">
+                <div class="actions action-1 container">
+                    <img src="images/discover.png" alt="magnifying glass with bulb inside" height="100px" width="100px">
+                    <h3>Discover: Uncover Opportunities Beyond Limits</h3>
+                    <p>Explore a world of possibilities! The gateway to exclusive events, forums, and resources tailored to elevate your business. Ignite innovation, stay informed, and unlock hidden potentials. Your journey to success starts with discovery!</p>
+                    <a class="cta-btn" href="#">Learn more</a>
+                </div>
+                <div class="actions action-2">
+                    <img src="images/directory.png" alt="simple file folder illustration" height="100px" width="100px">
+                    <h3>Directory: Connect with the Business Pulse of Naguilian</h3>
+                    <p>Navigate the thriving business landscape of Naguilian effortlessly. Our comprehensive directory is a powerful tool for connecting with local entrepreneurs. Find collaborators, clients, and partners seamlessly.</p>
+                    <a class="cta-btn" href="">See more</a>
+                </div>
+                <div class="actions action-3">
+                    <img src="images/join.png" alt="joing puzzel illustration" height="100px" width="100px">
+                    <h3>Join: Be the Catalyst of Business Synergy</h3>
+                    <p>Ready to amplify your business influence? Join the Naguilian Chamber of Commerce and become part of a dynamic community business synergy. Gain access to exclusive events and network of like-minded professionals.</p>
+                    <a class="cta-btn" href="">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="events section-4 container" >
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Event 1</h3>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Event 2</h3>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Event 3</h3>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <h3>Event 4</h3>
+                </div>
+            </div>
+        </section>
+        <section class="spotlights section-5 container">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-container">
+                <div class="text">
+                    <h3>Stellar Innovations Ltd.</h3>
+                    <p>
+                        Stellar Innovations Ltd. specializes in developing groundbreaking software solutions that not only meet the needs of today's businesses but anticipate the challenges of tomorrow. Their team of brilliant minds combines creativity and technical expertise to create products that redefine industries. <br><br>
+
+                        Featured Product: QuantumLeap Solutions Suite <br><br>
+
+                        One of their standout offerings is the QuantumLeap Solutions Suite – a comprehensive software package that seamlessly integrates AI, machine learning, and data analytics. This suite is designed to empower businesses in Naguilian to make informed decisions, streamline operations, and stay ahead of the competition. <br><br>
+
+                        Stellar Innovations Ltd. doesn't just excel in the tech world; they are also deeply committed to community engagement. Through mentorship programs and educational initiatives, they actively contribute to the growth of the local tech ecosystem. They believe that a rising tide lifts all boats, and they are dedicated to fostering the next generation of innovators.
+                    </p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="architecture building">
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <h3>Spotlight 1</h3>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <h3>Spotlight 2</h3>
+            </div>
+            <div class="card">
+                <img src="" alt="">
+                <h3>Spotlight 3</h3>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="container">
-            <h3>Get In Touch</h3>
-            <p>Naguilian, La Union, Philippines</p>
-            <p>naguilianchamber@email.com</p>
-            <p>+1 234 567 8910</p>
-
-            <h3>Additional Resources</h3>
-            <p><a href="#">Discover</a></p>
-            <p><a href="#">Directory</a></p>
-            <p><a href="#">Join</a></p>
-
-            <p>&copy; <span id="year"></span>Designed by Camelle Castro for WDD 230</p>
-            <p id="lastModified"></p>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Get In Touch</h3>
+                <p>Naguilian, La Union, Philippines</p>
+                <p>naguilianchamber@email.com</p>
+                <p>+1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <h3>Additional Resources</h3>
+                <p><a href="#">Discover</a></p>
+                <p><a href="#">Directory</a></p>
+                <p><a href="#">Join</a></p>
+            </div>
         </div>
+        <div class="footer-3">
+                <p>&copy; <span id="year"></span>Designed by Camelle Castro</p>
+                <p>WDD 230 - Frontend Development I</p>
+                <p id="lastModified"></p>
+            </div>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
 </body>
 </html>
