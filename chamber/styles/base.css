@@ -364,5 +364,9 @@ footer a:hover {
     height: 50px;
 }
 
+.actions img {
+    height: 100px;
+    width: auto;
+}
 
 
