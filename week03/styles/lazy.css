@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+p {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+img {
+    width: 100%;
+    animation: fade 10s;
+    margin-bottom: 10px;
+    background: #000000;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
