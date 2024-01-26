@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <img class="my-image" src="images/my-image.jpg" alt="Self Portrait of Camelle Castro">
+        <img class="my-image" src="images/my-image.webp" alt="Self Portrait of Camelle Castro" width="100" height="150">
         <span class="name">
             Camelle Castro
         </span>
@@ -37,47 +37,60 @@
         </ul>
     </nav>
     <main class="main-content">
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 560px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="jordan river utah temple" width="960" height="600">
+            </picture>
+            <div class="herolabel">
+                <p>Jordan River <br> Utah Temple</p>
+            </div>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card activities">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li>
-                    Week 01: 
-                    <a href="week01/holygrail.html">Grid Layout</a> | 
-                    <a href="week01/media-query.html">Media Query</a> | 
-                    <a href="https://codepen.io/camellecastro/pen/abMmpjy">JS Pen</a>
-                </li>
-                <li>
-                    Week 02: 
-                    <a href="week02/design.html">Web Design Principles</a> |
-                    <a href="https://codepen.io/camellecastro/pen/GReWPww">Hamburger Menu</a> |
-                    <a href="week02/bom.html">DOM Manipulation</a>
-                </li>
-                <li>
-                    Week 03: 
-                    <a href="week03/images/landscape.webp">WebP</a> |
-                    <a href="week03/lazyload.html">Lazy Load</a> |
-                    <a href="week03/responsive-images.html">Responsive Images</a> |
-                    <a href="week03/bom.html">BOM Website Enhancement</a>
-                </li>
-                <li>
-                    Week 04: <a href="#"></a>
-                </li>
-                <li>
-                    Week 05: <a href="#"></a>
-                </li>
-                <li>
-                    Week 06: <a href="#"></a>
-                </li>
-            </ul>
-        </section>
-        <section class="card information">
-            <h2>Information</h2>
-            <span id="information"></span>
-        </section>
+        <div class="card-container">
+            <section class="card activities">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>
+                        Week 01: 
+                        <a href="week01/holygrail.html">Grid Layout</a> | 
+                        <a href="week01/media-query.html">Media Query</a> | 
+                        <a href="https://codepen.io/camellecastro/pen/abMmpjy">JS Pen</a>
+                    </li>
+                    <li>
+                        Week 02: 
+                        <a href="week02/design.html">Web Design Principles</a> |
+                        <a href="https://codepen.io/camellecastro/pen/GReWPww">Hamburger Menu</a> |
+                        <a href="week02/bom.html">DOM Manipulation</a>
+                    </li>
+                    <li>
+                        Week 03: 
+                        <a href="week03/images/landscape.webp">WebP</a> |
+                        <a href="week03/lazyload.html">Lazy Load</a> |
+                        <a href="week03/responsive-images.html">Responsive Images</a> |
+                        <a href="week03/bom.html">BOM Website Enhancement</a>
+                    </li>
+                    <li>
+                        Week 04: <a href="#"></a>
+                    </li>
+                    <li>
+                        Week 05: <a href="#"></a>
+                    </li>
+                    <li>
+                        Week 06: <a href="#"></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="card information">
+                <h2>Information</h2>
+                <span id="information"></span>
+                <p>Visit Count: <span class="visits"></span></p>
+            </section>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179911.04086677195!2d-113.67549264271904!3d53.52884013188701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224580deff23%3A0x411fa00c4af6155d!2sEdmonton%2C%20AB!5e0!3m2!1sen!2sca!4v1706249286625!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy" ></iframe>
     </main>
     <footer>
-        <p class="align">&copy; <span id="year"></span> Camelle Castro | Canada <img class="flag" src="images/canada.webp" alt="canada flag"></p>
+        <p class="align">&copy; <span id="year"></span> Camelle Castro | Canada <img class="flag" src="images/canada.webp" alt="canada flag" loading="lazy"></p>
         <p id="lastModified"></p>
         <div class="toggle-container">
             <input type="checkbox" id="toggle" class="toggle-input">
