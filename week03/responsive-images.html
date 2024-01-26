@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD230 - Responsive Images: srcset Learning Activity</title>
+    <meta name="description" content="Responsive Images Learning Activity for WDD 230 - Web Frontend Development I Week 03">
+    <meta name="author" content="Camelle Castro">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="cebu temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</html>
