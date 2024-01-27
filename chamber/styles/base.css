@@ -380,6 +380,7 @@ footer a:hover {
 }
 .discover h1 {
     font-size: 4rem;
+    line-height: 3.5rem;
 }
 
 /* calendar */
@@ -416,7 +417,6 @@ td {
 }
 
 .sidebar p {
-    color: #666;
     margin: 0;
 }
 

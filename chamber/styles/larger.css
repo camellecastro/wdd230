@@ -125,6 +125,11 @@
     }
 
     /* DISCOVER */
+
+    .discover h1 {
+        font-size: 4rem;
+    }
+
     .discover {
         display: grid;
         grid-template-columns: 1fr 3fr;
