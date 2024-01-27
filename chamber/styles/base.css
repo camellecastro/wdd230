@@ -15,7 +15,7 @@ h1, h2 {
     margin: 30px;
     line-height: 1.5rem;
 }
-h3 {
+h3, h4 {
     color: #04364A;
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -368,6 +368,109 @@ footer a:hover {
 .actions img {
     height: 100px;
     width: auto;
+}
+
+
+/* DISCOVER DISCOVER DISCOVER DISCOVER */
+.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.discover h1 {
+    font-size: 4rem;
+}
+
+/* calendar */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    cursor: pointer;
+}
+
+.selected-day {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar p {
+    color: #666;
+    margin: 0;
+}
+
+.sidebar h3,
+.sidebar h2 {
+    font-size: 2rem;
+    margin: 5px 15px;
+}
+
+.sidebar h4 {
+    font-size: 1.5rem;
+    margin: 10px 0 0 15px;
+}
+
+img.lazy-load {
+    width: 100%;
+    height: auto;
+}
+
+.image-effect {
+    border-radius: 15px 100px;
+    width: auto;
+    height: auto;
+    opacity: 95%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.image-effect1 {
+    border-radius: 100px 15px;
+    width: auto;
+    height: auto;
+    opacity: 95%;
+    object-fit: cover;
+}
+.image-effect:hover,
+.image-effect1:hover {
+    opacity: 1;
+    filter: saturate(50%);
+}
+
+.img-container {
+    position: relative;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    opacity: 0.90;
+    padding: 10px;
+    color: #fff;
+	font-size: 4rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
 }
 
 

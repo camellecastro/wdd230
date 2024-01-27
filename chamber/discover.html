@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Naguilian Chamber of Commerce - Discover | WDD 230 Web Frontend Development I Project
+    </title>
+    <meta name="description" content="Naguilian Chamber of Commerce Website Discover Page for WDD 230 - Web Frontend Development I Website Project">
+    <meta name="author" content="Camelle Castro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Naguilian Chamber of Commerce - WDD 230 Website Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://camellecastro.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo.webp" alt="icon and name of naguilian chamber of commerce" >
+        <img class="logo-name" src="images/logo-name.webp" alt="logo name" >
+        <div class="social-icons">
+            <a href="#">
+                <img class="icons" src="images/facebook.webp" alt="facebook logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/twitter.webp" alt="twitter logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/linkedin-logo.webp" alt="linkedin logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/youtube.webp" alt="youtube logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/instagram." alt="instagram logo">
+            </a>
+        </div>
+        <!-- for hamburger menu -->
+        <a href="#" id="menu"></a>
+    </header>
+    <nav>
+        <ul class="navigation container">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Discovery</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="container discover">
+            <div class="discover-title">
+                <h1>Discover</h1>
+                <p>
+                    Unlock the Gateway to Success: Explore the Chamber of Commerce Discover Page! Dive into a world of opportunities, networking, and growth as you navigate through a myriad of resources designed to elevate your business. Connect with like-minded entrepreneurs, access exclusive events, and tap into a wealth of knowledge. Your journey to business excellence starts here. Join the Chamber of Commerce community and turn possibilities into prosperity.
+                </p>
+            </div>
+            <aside class="sidebar">
+                <p><span id="visitMessage"></span></p>
+
+                <h2>Community Information</h2>
+                <p>Welcome to our vibrant community! The perfect place to live, work, and thrive. Explore the rich diversity and opportunities.</p>
+                
+                <h3>Demographics</h3>
+                <p>Our community is home to a diverse population, including various age groups and cultural backgrounds.</p>
+
+                <h3>Statistical Data</h3>
+                <p>Explore the latest statistical data showcasing the economic and social aspects of our community.</p>
+
+                <h3>Upcoming Events</h3>
+                <h4>Event 1</h4>
+                <p>February 1 - Business Expo</p>
+                <h4>Event 2</h4>
+                <p>February 18 - Local Business Workshop</p>
+                <h4>Event 3</h4>
+                <p>March 2 - Community Festival</p>
+
+                <!-- Calendar -->
+                <h3>Community Calendar</h3>
+                <table id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </aside>
+
+            <div class="disover-content">
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/business-expo-small.webp"  width="600" height="400">
+                        <img class="image-effect lazy-load" src="images/business-expo-large.webp" alt="Business Expositions" loading="lazy" width="1280" height="853">
+                    </picture>
+                    <h2 class="image-label">Business Expo</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/localevent-small.webp"  width="600" height="400">
+                        <img class="image-effect1 lazy-load" src="images/localevent-large.webp" alt="Local Event" loading="lazy" width="1280" height="853">
+                    </picture>
+                    <h2 class="image-label">Local Business Workshop</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/community-festival-small.webp" width="600" height="400">
+                        <img class="image-effect lazy-load" src="images/community-festival-large.webp" alt="Community Festival" loading="lazy" width="1280" height="853">
+                    </picture>
+                    <h2 class="image-label">Community Festival</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/cityscape-small.webp"  width="600" height="400">
+                        <img class="image-effect1 lazy-load" src="images/cityscape-large.webp" alt="Cityscape" loading="lazy" width="1280" height="853">
+                    </picture>
+                    <h2 class="image-label">Cityscapes</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="images/blocal-attractions-small.webp" width="600" height="400">
+                        <img class="image-effect lazy-load" src="images/local-attraction-large.webp" alt="Local Attractions" loading="lazy" width="1280" height="853">
+                    </picture>
+                    <h2 class="image-label">An hour away paradise</h2>
+                </div>
+                <div class="img-container">
+                    <picture>
+                    <source media="(max-width: 600px)" srcset="images/park-small.webp" width="600" height="400">
+                    <img class="image-effect1 lazy-load" src="images/park-large.webp" alt="Featured Spots" loading="lazy" width="1280" height="853">
+                </picture>
+                <h2 class="image-label">Featured Spots</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Get In Touch</h3>
+                <p>Naguilian, La Union, Philippines</p>
+                <p>naguilianchamber@email.com</p>
+                <p>+1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <h3>Additional Resources</h3>
+                <p><a href="discover.html">Discover</a></p>
+                <p><a href="#">Directory</a></p>
+                <p><a href="#">Join</a></p>
+            </div>
+        </div>
+        <div class="footer-3">
+                <p>&copy; <span id="year"></span>Designed by Camelle Castro</p>
+                <p>WDD 230 - Frontend Development I</p>
+                <p id="lastModified"></p>
+            </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+</body>
+</html>

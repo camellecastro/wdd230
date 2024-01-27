@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Discover</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles or modifications can be added here */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header, nav, footer {
+            /* Preserve these styles from your existing CSS */
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4 and main area takes 3/4 */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                grid-template-columns: 1fr; /* Single column layout for mobile */
+            }
+        }
+
+        /* CSS for the lazy loading effect */
+        img {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        img.loaded {
+            opacity: 1;
+        }
+
+        /* CSS property effect on image hover */
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            /* Your sidebar styles go here */
+        }
+
+        .sidebar p {
+            margin-bottom: 15px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Preserve your header content here -->
+    </header>
+
+    <nav>
+        <!-- Preserve your navigation content here -->
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <p>Welcome to our community! The perfect place to live, work, and thrive.</p>
+            
+            <!-- Display a message based on the time between visits using localStorage -->
+            <script>
+                const lastVisit = localStorage.getItem('lastVisit');
+                const currentDate = Date.now();
+                const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+
+                if (!lastVisit) {
+                    document.write('<p>Welcome! Let us know if you have any questions.</p>');
+                } else {
+                    const daysDifference = Math.floor((currentDate - lastVisit) / oneDayInMilliseconds);
+
+                    if (daysDifference < 1) {
+                        document.write('<p>Back so soon! Awesome!</p>');
+                    } else {
+                        const pluralizeDays = daysDifference === 1 ? 'day' : 'days';
+                        document.write(`<p>You last visited ${daysDifference} ${pluralizeDays} ago.</p>`);
+                    }
+                }
+
+                localStorage.setItem('lastVisit', currentDate);
+            </script>
+        </div>
+
+        <div class="main-content">
+            <!-- Main area with lazy loading images -->
+            <img src="image1.jpg" alt="Local Event" loading="lazy" class="lazy-load">
+            <img src="image2.jpg" alt="Cityscape" loading="lazy" class="lazy-load">
+            <img src="image3.jpg" alt="Community Event" loading="lazy" class="lazy-load">
+            <img src="image4.jpg" alt="Local Attraction" loading="lazy" class="lazy-load">
+            <img src="image5.jpg" alt="Business District" loading="lazy" class="lazy-load">
+            <img src="image6.jpg" alt="Park" loading="lazy" class="lazy-load">
+        </div>
+    </main>
+
+    <footer>
+        <!-- Preserve your footer content here -->
+    </footer>
+
+    <script>
+        // JavaScript for lazy loading images
+        document.addEventListener('DOMContentLoaded', function () {
+            const lazyLoadImages = document.querySelectorAll('.lazy-load');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.src; // This triggers the browser to load the image
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            }, options);
+
+            lazyLoadImages.forEach(image => {
+                observer.observe(image);
+            });
+        });
+    </script>
+</body>
+</html>
