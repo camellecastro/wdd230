@@ -1,0 +1,52 @@
+:root {
+	--back: hsl(150, 4%, 10%);
+    --back2: hsl(150, 1%, 42%);
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: rgba(255, 255, 255, 0.886);
+	--border: hsl(150, 4%, 10%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: var(--back);
+	font-size: .85rem;
+}
+
+tr th:first-child {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--border);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+    color: var(--forelight);
+}
+
+td {
+	text-align: center;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
