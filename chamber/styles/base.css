@@ -145,7 +145,7 @@ a#menu.show{
 /* Hero section */
 .hero {
     position: relative;
-    background: url("../images/hero.jpg") no-repeat center center/cover;
+    background: url("../images/hero.webp") no-repeat center center/cover;
     height: auto;
 }
 .hero::before {
@@ -288,8 +288,11 @@ a#menu.show{
 .spotlight-container h3 {
     margin: 15px 30px;
 }
-.spotlight-container img {
-    border-radius: 10px;  
+.spotlight-container picture img {
+    margin: 0 .5rem;
+    border-radius: 10px;
+    width: 100%;  
+    object-fit: cover;
 }
 .text {
     text-align: left;

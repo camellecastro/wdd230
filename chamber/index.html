@@ -1,172 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Naguilian Chamber of Commerce - Home | WDD 230 Web Frontend Development I Project
-    </title>
-    <meta name="description" content="Naguilian Chamber of Commerce Website Home Page for WDD 230 - Web Frontend Development I Website Project">
-    <meta name="author" content="Camelle Castro">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Naguilian Chamber of Commerce - WDD 230 Website Project">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <meta property="og:url" content="https://camellecastro.github.io/wdd230/chamber">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-</head>
-<body>
-    <header class="header">
-        <img class="logo" src="images/logo.webp" alt="icon and name of naguilian chamber of commerce" >
-        <img class="logo-name" src="images/logo-name.webp" alt="logo name" >
-        <div class="social-icons">
-            <a href="#">
-                <img class="icons" src="images/facebook.webp" alt="facebook logo">
-            </a>
-            <a href="#">
-                <img class="icons" src="images/twitter.webp" alt="twitter logo">
-            </a>
-            <a href="#">
-                <img class="icons" src="images/linkedin-logo.webp" alt="linkedin logo">
-            </a>
-            <a href="#">
-                <img class="icons" src="images/youtube.webp" alt="youtube logo">
-            </a>
-            <a href="#">
-                <img class="icons" src="images/instagram.webp" alt="instagram logo">
-            </a>
-        </div>
-        <!-- for hamburger menu -->
-        <a href="#" id="menu"></a>
-    </header>
-    <nav>
-        <ul class="navigation container">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-        </ul>
-    </nav>
-    <main class="main-content">
-        <section class="hero">
-            <div class="gradient">
-                <div class="container">
-                    <h1>Elevate Your Business Journey With Naguilian Chamber of Commerce</h1>
-                    <p>Join a dynamic community of local entrepreneurs! Unleash new opportunities, forge valuable connections, and stay ahead of the curve with exclusive events and insights. Your success story begins here – Become a member today!</p>
-                    <!-- call to action -->
-                    <a href="#" class="cta-button">Join</a>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Naguilian Chamber of Commerce - Home | WDD 230 Web Frontend Development I Project
+        </title>
+        <meta name="description" content="Naguilian Chamber of Commerce Website Home Page for WDD 230 - Web Frontend Development I Website Project">
+        <meta name="author" content="Camelle Castro">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <meta property="og:title" content="Naguilian Chamber of Commerce - WDD 230 Website Project">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <meta property="og:url" content="https://camellecastro.github.io/wdd230/chamber">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+    <body>
+        <header class="header">
+            <img class="logo" src="images/logo.webp" alt="icon and name of naguilian chamber of commerce">
+            <img class="logo-name" src="images/logo-name.webp" alt="logo name">
+            <div class="social-icons">
+                <a href="#">
+                    <img class="icons" src="images/facebook.webp" alt="facebook logo">
+                </a>
+                <a href="#">
+                    <img class="icons" src="images/twitter.webp" alt="twitter logo">
+                </a>
+                <a href="#">
+                    <img class="icons" src="images/linkedin-logo.webp" alt="linkedin logo">
+                </a>
+                <a href="#">
+                    <img class="icons" src="images/youtube.webp" alt="youtube logo">
+                </a>
+                <a href="#">
+                    <img class="icons" src="images/instagram.webp" alt="instagram logo">
+                </a>
             </div>
-        </section>
-        <div class="container after-hero">
-            <section class="section-1">
-                <h2>Welcome to the Naguilian Chamber of Commerce - Your Gateway to Business Synergy!</h2>
-                <p>At the heart of Naguilian's vibrant business community, the Naguilian Chamber of Commerce stands as the pulse, connecting local entrepreneurs and fostering collaboration. Our mission is to be the central hub for business synergy, ensuring that you, as a business owner, have the resources and connections needed to thrive.</p>
+            <!-- for hamburger menu -->
+            <a href="#" id="menu"></a>
+        </header>
+        <nav>
+            <ul class="navigation container">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="#">Directory</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="hero">
+                <div class="gradient">
+                    <div class="container">
+                        <h1>Elevate Your Business Journey With Naguilian Chamber of Commerce</h1>
+                        <p>Join a dynamic community of local entrepreneurs! Unleash new opportunities, forge valuable connections, and stay ahead of the curve with exclusive events and insights. Your success story begins here – Become a member today!</p>
+                        <!-- call to action -->
+                        <a href="#" class="cta-button">Join</a>
+                    </div>
+                </div>
             </section>
-            <section class="card weather section-2">
-                <h2>WEATHER TODAY</h2>
-            </section>
-        </div>
-        <section class=" section-3">
-            <div class="actions-intro container">
-                <h2>What we do</h2>
-                <p>
-                    We support and enhance the Naguilian business community by advocating for conditions that ensure competitiveness, delivering exceptional network experiences, and connecting people and businesses—all in a socially responsible manner.
-                </p>
+            <div class="container after-hero">
+                <section class="section-1">
+                    <h2>Welcome to the Naguilian Chamber of Commerce - Your Gateway to Business Synergy!</h2>
+                    <p>At the heart of Naguilian's vibrant business community, the Naguilian Chamber of Commerce stands as the pulse, connecting local entrepreneurs and fostering collaboration. Our mission is to be the central hub for business synergy, ensuring that you, as a business owner, have the resources and connections needed to thrive.</p>
+                </section>
+                <section class="card weather section-2">
+                    <h2>WEATHER TODAY</h2>
+                </section>
             </div>
-            <div class="actions-container ">
-                <div class="actions action-1 container">
-                    <img src="images/discover.png" alt="magnifying glass with bulb inside">
-                    <h3>Discover: Uncover Opportunities Beyond Limits</h3>
-                    <p>Explore a world of possibilities! The gateway to exclusive events, forums, and resources tailored to elevate your business. Ignite innovation, stay informed, and unlock hidden potentials. Your journey to success starts with discovery!</p>
-                    <a class="cta-btn" href="#">Learn more</a>
-                </div>
-                <div class="actions action-2">
-                    <img src="images/directory.png" alt="simple file folder illustration">
-                    <h3>Directory: Connect with the Business Pulse of Naguilian</h3>
-                    <p>Navigate the thriving business landscape of Naguilian effortlessly. Our comprehensive directory is a powerful tool for connecting with local entrepreneurs. Find collaborators, clients, and partners seamlessly.</p>
-                    <a class="cta-btn" href="">See more</a>
-                </div>
-                <div class="actions action-3">
-                    <img src="images/join.png" alt="joing puzzel illustration">
-                    <h3>Join: Be the Catalyst of Business Synergy</h3>
-                    <p>Ready to amplify your business influence? Join the Naguilian Chamber of Commerce and become part of a dynamic community business synergy. Gain access to exclusive events and network of like-minded professionals.</p>
-                    <a class="cta-btn" href="">Learn more</a>
-                </div>
-            </div>
-        </section>
-        <section class="events section-4 container" >
-            <h2>Upcoming Events</h2>
-            <div class="events-grid">
-                <div class="card">
-                    <h3>Event 1</h3>
-                </div>
-                <div class="card">
-                    <h3>Event 2</h3>
-                </div>
-                <div class="card">
-                    <h3>Event 3</h3>
-                </div>
-                <div class="card">
-                    <h3>Event 4</h3>
-                </div>
-            </div>
-        </section>
-        <section class="spotlights section-5 container">
-            <h2>Business Spotlights</h2>
-            <div class="spotlight-container">
-                <div class="text">
-                    <h3>Stellar Innovations Ltd.</h3>
+            <section class=" section-3">
+                <div class="actions-intro container">
+                    <h2>What we do</h2>
                     <p>
-                        Stellar Innovations Ltd. specializes in developing groundbreaking software solutions that not only meet the needs of today's businesses but anticipate the challenges of tomorrow. Their team of brilliant minds combines creativity and technical expertise to create products that redefine industries. <br><br>
-
-                        Featured Product: QuantumLeap Solutions Suite <br><br>
-
-                        One of their standout offerings is the QuantumLeap Solutions Suite – a comprehensive software package that seamlessly integrates AI, machine learning, and data analytics. This suite is designed to empower businesses in Naguilian to make informed decisions, streamline operations, and stay ahead of the competition. <br><br>
-
-                        Stellar Innovations Ltd. doesn't just excel in the tech world; they are also deeply committed to community engagement. Through mentorship programs and educational initiatives, they actively contribute to the growth of the local tech ecosystem. They believe that a rising tide lifts all boats, and they are dedicated to fostering the next generation of innovators.
+                        We support and enhance the Naguilian business community by advocating for conditions that ensure competitiveness, delivering exceptional network experiences, and connecting people and businesses—all in a socially responsible manner.
                     </p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="architecture building">
+                <div class="actions-container ">
+                    <div class="actions action-1 container">
+                        <img src="images/discover.webp" alt="magnifying glass with bulb inside">
+                        <h3>Discover: Uncover Opportunities Beyond Limits</h3>
+                        <p>Explore a world of possibilities! The gateway to exclusive events, forums, and resources tailored to elevate your business. Ignite innovation, stay informed, and unlock hidden potentials. Your journey to success starts with discovery!</p>
+                        <a class="cta-btn" href="#">Learn more</a>
+                    </div>
+                    <div class="actions action-2">
+                        <img src="images/directory.webp" alt="simple file folder illustration">
+                        <h3>Directory: Connect with the Business Pulse of Naguilian</h3>
+                        <p>Navigate the thriving business landscape of Naguilian effortlessly. Our comprehensive directory is a powerful tool for connecting with local entrepreneurs. Find collaborators, clients, and partners seamlessly.</p>
+                        <a class="cta-btn" href="">See more</a>
+                    </div>
+                    <div class="actions action-3">
+                        <img src="images/join.webp" alt="joing puzzel illustration">
+                        <h3>Join: Be the Catalyst of Business Synergy</h3>
+                        <p>Ready to amplify your business influence? Join the Naguilian Chamber of Commerce and become part of a dynamic community business synergy. Gain access to exclusive events and network of like-minded professionals.</p>
+                        <a class="cta-btn" href="">Learn more</a>
+                    </div>
+                </div>
+            </section>
+            <section class="events section-4 container">
+                <h2>Upcoming Events</h2>
+                <div class="events-grid">
+                    <div class="card">
+                        <h3>Event 1</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Event 2</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Event 3</h3>
+                    </div>
+                    <div class="card">
+                        <h3>Event 4</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="spotlights section-5 container">
+                <h2>Business Spotlights</h2>
+                <div class="spotlight-container">
+                    <div class="text">
+                        <h3>Stellar Innovations Ltd.</h3>
+                        <p>
+                            Stellar Innovations Ltd. specializes in developing groundbreaking software solutions that not only meet the needs of today's businesses but anticipate the challenges of tomorrow. Their team of brilliant minds combines creativity and technical expertise to create products that redefine industries.
+                            <br>
+                            <br>
+                            Featured Product: QuantumLeap Solutions Suite
+                            <br>
+                            <br>
+                            One of their standout offerings is the QuantumLeap Solutions Suite – a comprehensive software package that seamlessly integrates AI, machine learning, and data analytics. This suite is designed to empower businesses in Naguilian to make informed decisions, streamline operations, and stay ahead of the competition.
+                            <br>
+                            <br>
+                            Stellar Innovations Ltd. doesn't just excel in the tech world; they are also deeply committed to community engagement. Through mentorship programs and educational initiatives, they actively contribute to the growth of the local tech ecosystem. They believe that a rising tide lifts all boats, and they are dedicated to fostering the next generation of innovators.
+                        </p>
+                    </div>
+                    <picture>
+                        <!-- <source
+                            media="(max-width: 600px)"
+                            srcset="images/section-image-small.webp"
+                            width="250"
+                            height="350"
+                        > -->
+                        <img
+                            src="images/section-image-large.webp"
+                            alt="architecture building"
+                            width="500"
+                            height="700"
+                            loading="lazy"
+                        >
+                    </picture>
+                </div>
+                <div class="card">
+                    <h3>Spotlight 1</h3>
+                </div>
+                <div class="card">
+                    <h3>Spotlight 2</h3>
+                </div>
+                <div class="card">
+                    <h3>Spotlight 3</h3>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-1">
+                    <h3>Get In Touch</h3>
+                    <p>Naguilian, La Union, Philippines</p>
+                    <p>naguilianchamber@email.com</p>
+                    <p>+1 234 567 8910</p>
+                </div>
+                <div class="footer-2">
+                    <h3>Additional Resources</h3>
+                    <p>
+                        <a href="#">Discover</a>
+                    </p>
+                    <p>
+                        <a href="#">Directory</a>
+                    </p>
+                    <p>
+                        <a href="#">Join</a>
+                    </p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Spotlight 1</h3>
-            </div>
-            <div class="card">
-                <h3>Spotlight 2</h3>
-            </div>
-            <div class="card">
-                <h3>Spotlight 3</h3>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-1">
-                <h3>Get In Touch</h3>
-                <p>Naguilian, La Union, Philippines</p>
-                <p>naguilianchamber@email.com</p>
-                <p>+1 234 567 8910</p>
-            </div>
-            <div class="footer-2">
-                <h3>Additional Resources</h3>
-                <p><a href="#">Discover</a></p>
-                <p><a href="#">Directory</a></p>
-                <p><a href="#">Join</a></p>
-            </div>
-        </div>
-        <div class="footer-3">
-                <p>&copy; <span id="year"></span>Designed by Camelle Castro</p>
+            <div class="footer-3">
+                <p>&copy;
+                    <span id="year"></span>Designed by Camelle Castro
+                </p>
                 <p>WDD 230 - Frontend Development I</p>
                 <p id="lastModified"></p>
             </div>
-    </footer>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburgerMenu.js"></script>
-</body>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburgerMenu.js"></script>
+    </body>
 </html>
