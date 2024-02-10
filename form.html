@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Camelle Castro - WDD 230 - Web Frontend Development
+    </title>
+    <meta name="description" content="Course Assignment Portal of Camelle Castro for WDD 230 - Web Frontend Development I">
+    <meta name="author" content="Camelle Castro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Camelle Castro - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1574541647051-099cedfb7f8f?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWRtb250b258ZW58MHx8MHx8fDA%3D">
+    <meta property="og:url" content="https://camellecastro.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <img class="my-image" src="images/my-image.webp" alt="Self Portrait of Camelle Castro" width="100" height="150">
+        <span class="name">
+            Camelle Castro
+        </span>
+    </header>
+    <a href="#" id="menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main class="form-content">
+        <h1>Course Home Page Form</h1>
+        <form method="get" action="record.html">
+            <legend>Page Rating</legend>
+            <h6>* Required Information</h6>
+
+            <label for="username" class="top">Username*
+                <input type="text" id="username" name="username" placeholder="johndoe" required>
+            </label>
+            <div id="formmessage"></div>
+            <label for="password" class="top">Password*
+                <input type="text" id="password" name="password" placeholder="At least eight alpha-numeric characters long." title="Must contain 8 alpha-numeric characters" pattern="[A-Za-z0-9]{8,}" required>
+            </label>
+            <label for="confirmPassword" class="top">Password Confirmation*
+                <input type="text" id="confirmPassword" name="confirmPassword" required>
+            </label>
+            <label for="email" class="top">Email Address*
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your byui student email address. (ex. johndoe@byui.edu)"
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address."
+                    required
+                >
+            </label>
+            <label for="pageRating" class="top rating">Page Rating
+                <span id="ratingDisplay"></span>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" >
+            </label>
+
+            <input class="submitBtn" type="submit" value="Send Page Rating">
+
+        </form>
+    </main>
+    <footer>
+        <p class="align">&copy; <span id="year"></span> Camelle Castro | Canada <img class="flag" src="images/canada.webp" alt="canada flag" loading="lazy"></p>
+        <p id="lastModified"></p>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-input">
+            <label for="toggle" class="toggle-label">
+            <span class="sun">&#9728;</span>
+            <span class="moon">&#127771;</span>
+            </label>
+        </div>
+    </footer>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
