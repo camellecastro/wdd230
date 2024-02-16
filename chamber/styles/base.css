@@ -47,6 +47,11 @@ main, header, footer {
 	justify-content: space-between;
     padding: 0 30px;
     height: auto;
+    position: sticky;
+    z-index: 1;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
 }
 .logo {
     display: none;
@@ -64,6 +69,9 @@ div.social-icons {
 nav {
     background-color: #04364A;
     margin: 0 auto;
+    position: sticky;
+    top: 100px;
+    z-index: 1;
 }
 
 .navigation {
@@ -476,4 +484,149 @@ img.lazy-load {
     line-height: 3rem;
 }
 
+/* JOIN PAGE */
+.title {
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+.introduction p {
+    padding: 0 2rem 2rem 2rem;
+    margin: 0;
+}
+.join h2 {
+    font-size: 2rem;
+}
+
+form {
+    margin-left: 2rem;
+}
+
+form h2 {
+    margin: 0;
+}
+
+form p {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #135267;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #04364A;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #04364A;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #04364A;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #04364A;
+    color: #DAFFFB;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    background-color: #135267;
+    color: #DAFFFB;
+}
+
+form label.top input:required {
+    border-left: #04364A solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #135267 solid 6px;
+}
+
+form textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    max-width: 20rem;
+    border-radius: 10px;
+    border: solid 1px #04364A;
+}
+
+h2.level {
+    font-size: 1.3rem;
+    color: #135267;
+}
+
+.benefits {
+    display: grid;
+    margin-bottom: 2rem;
+}
+
+.membershipLevel {
+    margin-top: 1rem;
+}
+
+.membership-level {
+    border: 1px solid #04364A;
+    border-radius: 10px;
+    margin: .3rem 1rem 0 0;
+    padding: 1rem;
+}
+
+.membership-level h3 {
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+
+.membership-level p {
+    color: #135267;
+    text-align: center;
+}
+.membership-level ul {
+    padding: 0 0 0 2rem;
+    list-style: disc;
+}
+.membership-level li {
+    margin-bottom: 5px;
+}
+
+.bronze {
+    background-color: #DAFFFB;
+}
+.silver {
+    background-color: #135267;
+    color: #fff;
+}
+.silver h3,
+.gold h3 {
+    color: #fff;
+}
+.silver p,
+.gold p {
+    color: #fff;
+}
+
+.gold {
+    background-color: #04364A;
+    color: #fff;
+}
 

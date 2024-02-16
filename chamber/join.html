@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Naguilian Chamber of Commerce - Discover | WDD 230 Web Frontend Development I Project
+    </title>
+    <meta name="description" content="Naguilian Chamber of Commerce Website Discover Page for WDD 230 - Web Frontend Development I Website Project">
+    <meta name="author" content="Camelle Castro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Naguilian Chamber of Commerce - WDD 230 Website Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://camellecastro.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo.webp" alt="icon and name of naguilian chamber of commerce" >
+        <img class="logo-name" src="images/logo-name.webp" alt="logo name" >
+        <div class="social-icons">
+            <a href="#">
+                <img class="icons" src="images/facebook.webp" alt="facebook logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/twitter.webp" alt="twitter logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/linkedin-logo.webp" alt="linkedin logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/youtube.webp" alt="youtube logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/instagram.webp" alt="instagram logo">
+            </a>
+        </div>
+        <!-- for hamburger menu -->
+        <a href="#" id="menu"></a>
+    </header>
+    <nav>
+        <ul class="navigation container">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+        <main class="main-content">
+            <div class="container join">
+                <section class=introduction>
+                    <h1 class="title">Join the Naguilian Chamber of Commerce</h1>
+
+                    <p>Welcome to the Naguilian Chamber of Commerce – a thriving community of businesses and professionals dedicated to the growth and prosperity of our region. By becoming a member, you are taking the first step towards unlocking a world of opportunities and collaboration.</p>
+
+                    <p>Membership with us opens doors to a myriad of benefits, including access to exclusive events, networking opportunities, and resources that can help propel your business to new heights. Whether you are a seasoned entrepreneur or just starting, our diverse community provides the support and connections needed to thrive in today's dynamic business landscape.</p>
+
+                    <p>Take a moment to complete the membership application form below and join us in shaping the future of Naguilian. We look forward to welcoming you to our vibrant community and working together towards mutual success.</p>
+                </section>
+                <!-- Form Section -->
+                <form action="thankyou.html" method="get">
+                    <h2>Membership Application Form</h2>
+                    <p>* Required Information</p>
+                    <label for="firstName" class="top">
+                        Applicant's First Name*
+                        <input type="text" id="firstName" name="firstName" required>
+                    </label>
+                    
+
+                    <label for="lastName" class="top">
+                        Applicant's Last Name*
+                        <input type="text" id="lastName" name="lastName" required>
+                    </label>
+                    
+
+                    <label for="position" class="top">
+                        Applicant's Title or Position
+                        <input type="text" id="position" name="position" pattern="[a-zA-Z\s\-]+" title="Only letters, hyphens, and spaces are allowed, with a minimum of seven characters">
+                    </label>
+
+                    <label for="email" class="top">
+                        Email Address*
+                        <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    </label>
+
+                    <label for="phone" class="top">
+                        Mobile Phone Number*
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+
+                    <label for="organization" class="top">
+                        Business/Organization's Name*
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+
+                    <div class="membershipLevel">
+                        <h2 class="level">Membership Level</h2>
+                        <label for="npMembership" class="sbs">
+                            <input type="radio" id="npMembership" name="membershipLevel" value="NP">
+                            NP Membership (Non-Profit)
+                        </label>
+
+                        <label for="bronzeMembership" class="sbs">
+                            <input type="radio" id="bronzeMembership" name="membershipLevel" value="Bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label for="silverMembership" class="sbs">
+                            <input type="radio" id="silverMembership" name="membershipLevel" value="Silver">
+                            Silver Membership
+                        </label>
+
+                        <label for="goldMembership" class="sbs">
+                            <input type="radio" id="goldMembership" name="membershipLevel" value="Gold">
+                            Gold Membership
+                        </label>
+                    </div>
+
+                    <label for="description" class="top">
+                        Business/Organization's Description
+                        <textarea id="description" name="description" placeholder="Tell us something about your business/organization."></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Join Chamber of Commerce" class="submitBtn">
+                </form>
+
+                <!-- Membership Benefits Section -->
+                <section class="benefits">
+                    <h2>Membership Level Benefits</h2>
+
+                    <div class="membership-level gold">
+                        <h3>Gold Membership</h3>
+                        <p>Cost: $500 per year</p>
+                        <ul>
+                            <li>Top-tier visibility on the Chamber's website</li>
+                            <li>Recognition as a major sponsor at events</li>
+                            <li>Priority access to sponsor Chamber programs</li>
+                            <li>Customized advertising packages</li>
+                            <li>Complimentary booth at Chamber trade shows</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-level silver">
+                        <h3>Silver Membership</h3>
+                        <p>Cost: $250 per year</p>
+                        <ul>
+                            <li>Premium listing in the online directory with logo</li>
+                            <li>Featured spot in the Chamber's newsletter</li>
+                            <li>Invitations to exclusive VIP events</li>
+                            <li>Special discounts on advertising opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-level bronze">
+                        <h3>Bronze Membership</h3>
+                        <p>Cost: $100 per year</p>
+                        <ul>
+                            <li>Highlighted listing in the online directory</li>
+                            <li>Recognition at Chamber events</li>
+                            <li>Discounts on Chamber-sponsored trainings</li>
+                            <li>Exclusive access to member-only webinars</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-level np">
+                        <h3>NP Membership (Non-Profit)</h3>
+                        <p>Free</p>
+                        <ul>
+                            <li>Listing in the Chamber's online directory</li>
+                            <li>Access to networking events</li>
+                            <li>Free attendance to select workshops and seminars</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Get In Touch</h3>
+                <p>Naguilian, La Union, Philippines</p>
+                <p>naguilianchamber@email.com</p>
+                <p>+1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <h3>Additional Resources</h3>
+                <p><a href="discover.html">Discover</a></p>
+                <p><a href="#">Directory</a></p>
+                <p><a href="#">Join</a></p>
+            </div>
+        </div>
+        <div class="footer-3">
+                <p>&copy; <span id="year"></span>Designed by Camelle Castro</p>
+                <p>WDD 230 - Frontend Development I</p>
+                <p id="lastModified"></p>
+            </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+</body>
+</html>

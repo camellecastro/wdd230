@@ -73,4 +73,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    localStorage.setItem('lastVisit', currentDate);
+localStorage.setItem('lastVisit', currentDate);
+    
+// Function to set the current date and time
+function setTimestamp() {
+    let timestampField = document.getElementById('timestamp');
+    const currentDate = new Date();
+    const formattedDate = currentDate.toISOString(); // Adjust the format if needed
+
+    timestampField.value = formattedDate;
+}

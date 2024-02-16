@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Naguilian Chamber of Commerce - Discover | WDD 230 Web Frontend Development I Project
+    </title>
+    <meta name="description" content="Naguilian Chamber of Commerce Website Discover Page for WDD 230 - Web Frontend Development I Website Project">
+    <meta name="author" content="Camelle Castro">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Naguilian Chamber of Commerce - WDD 230 Website Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1603202662747-00e33e7d1468?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://camellecastro.github.io/wdd230/chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo.webp" alt="icon and name of naguilian chamber of commerce" >
+        <img class="logo-name" src="images/logo-name.webp" alt="logo name" >
+        <div class="social-icons">
+            <a href="#">
+                <img class="icons" src="images/facebook.webp" alt="facebook logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/twitter.webp" alt="twitter logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/linkedin-logo.webp" alt="linkedin logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/youtube.webp" alt="youtube logo">
+            </a>
+            <a href="#">
+                <img class="icons" src="images/instagram.webp" alt="instagram logo">
+            </a>
+        </div>
+        <!-- for hamburger menu -->
+        <a href="#" id="menu"></a>
+    </header>
+    <nav>
+        <ul class="navigation container">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="container thankyou">
+            <h1>Thank You for Joining!</h1>
+            <p>We appreciate your interest in becoming a member of the Naguilian Chamber of Commerce.</p>
+            <p>Your application has been successfully submitted, and we look forward to welcoming you to our community.</p>
+            <p>If you have any questions or need further assistance, feel free to contact us.</p>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p>Contact Information:</p>
+                <p>Email: info@naguilianchamber.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <h3>Get In Touch</h3>
+                <p>Naguilian, La Union, Philippines</p>
+                <p>naguilianchamber@email.com</p>
+                <p>+1 234 567 8910</p>
+            </div>
+            <div class="footer-2">
+                <h3>Additional Resources</h3>
+                <p><a href="discover.html">Discover</a></p>
+                <p><a href="#">Directory</a></p>
+                <p><a href="#">Join</a></p>
+            </div>
+        </div>
+        <div class="footer-3">
+                <p>&copy; <span id="year"></span>Designed by Camelle Castro</p>
+                <p>WDD 230 - Frontend Development I</p>
+                <p id="lastModified"></p>
+            </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+</body>
+</html>
