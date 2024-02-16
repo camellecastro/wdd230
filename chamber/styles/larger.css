@@ -149,7 +149,7 @@
     /* JOIN PAGE */
     .join {
         display: grid;
-        grid-template-columns: 1fr 2;
+        grid-template-columns: 1fr 1fr;
     }
     .introduction {
         grid-column: 1/3;
