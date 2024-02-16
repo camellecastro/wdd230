@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.title {
+    color: #ffff
+    ;
+}
+.grid {
+    text-align: center;
+    max-width: 100%;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section {
+    border: 1px solid #163020;
+    background-color: #B6C4B6;
+    margin: 5px;
+}
+
+section h2 {
+    margin: 1rem;
+}
+
+section img {
+    margin: 1rem;
+    box-shadow: 0 0 30px #304D30;
+}
+
+#cards section img {
+    width: 80%;
+    height: auto;
+}
+/* 
+#163020
+#304D30
+#B6C4B6 */

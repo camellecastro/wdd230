@@ -1,0 +1,48 @@
+[
+    {
+        "familyName" : "Castro",
+        "moveInDate" : "2024-01-07",
+        "familyNumber" : 2,
+        "visitedByBishopric" : false,
+        "familyMembers" : [
+            {
+                "name" : "Camelle Castro",
+                "gender" : "Female",
+                "birthDate" : "1999-06-29"
+            },
+            {
+                "name" : "Neal Castro",
+                "gender" : "Male",
+                "birthDate" : "1995-08-19"
+            }
+        ]
+    },
+    {
+        "familyName": "Smith",
+        "moveInDate": "2024-02-15",
+        "familyNumber": 4,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "John Smith",
+                "gender": "Male",
+                "birthdate": "1990-01-01"
+            },
+            {
+                "name": "Jane Smith",
+                "gender": "Female",
+                "birthdate": "1992-05-15"
+            },
+            {
+                "name": "George Smith",
+                "gender": "Male",
+                "birthdate": "1995-07-20"
+            },
+            {
+                "name": "Genuiva Smith",
+                "gender": "Female",
+                "birthdate": "1999-09-04"
+            }
+        ]
+    }
+]
