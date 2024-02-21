@@ -202,5 +202,39 @@ div#spotlightContainer {
 }
 
 
+.flexcontainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.flexcontainer h2 {
+    color: #04364A;
+    font-size: 6rem;
+    line-height: 5rem;
+    text-align: left;
+    margin-left: 0;
+}
+
+.flexcontainer p {
+    padding: 0;
+}
+
+.flexcontainer a {
+    margin: 2rem 0
+}
+
+
+.popinfo {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+
 }
 

@@ -795,3 +795,67 @@ h3.town {
     margin-top: 1rem;
     border-radius: 0 0 13px 13px;
 }
+
+/* Your existing styles */
+div#popupBanner.popup {
+    height: auto;
+    min-height: 70vh;
+    width: 90%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffd700; /* Set your desired background color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #135267; /* Change color on hover */
+}
+
+.flexcontainer {
+    display: grid;
+}
+
+.flexcontainer h2 {
+    color: #04364A;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-align: left;
+}
+
+.flexcontainer p {
+    padding: 0;
+}
+
+.flexcontainer a {
+    display: block;
+    margin: 15px 0;
+    color: #04364A;
+    border: 1px solid #04364A;
+    border-radius: 10px;
+}
+
+.flexcontainer a:hover {
+    color: #fff;
+    background-color: #04364A;
+}

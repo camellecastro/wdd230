@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const showBannerDays = [1, 2, 3]; // Monday, Tuesday, Wednesday
 
     if (showBannerDays.includes(today)) {
-        popupBanner.style.display = 'flex';
+        popupBanner.style.display = 'block';
     }
 
     // Event listener to close the pop-up
