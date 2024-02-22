@@ -682,6 +682,7 @@ div .supportlocal bottom div
 }
 
 .grid {
+    display: grid;
     margin: 1rem;
 }
 
@@ -702,22 +703,24 @@ div .supportlocal bottom div
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
+}
+
+.list section p {
+    padding: 2px 1.5rem;
+}
+
+.list section a {
+    padding-left: 1.5rem;
 }
 
 .list section img {
 	display: none; /* smaller viewports only */
 }
 
-.list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
-}
-
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: #ddd;
 }
 
 .grid section h2 {
@@ -734,4 +737,8 @@ div .supportlocal bottom div
 .grid section a {
 	color: #135267;
     font-size: .8rem;
+}
+
+.supportlocal p {
+    padding-top: 0;
 }

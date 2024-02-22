@@ -66,21 +66,34 @@ function displayMembers(members) {
 
 getMembers();
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector(".grid");
+document.addEventListener('DOMContentLoaded', function () {
+    const gridButton = document.getElementById('grid');
+    const listButton = document.getElementById('list');
+    const memberContainer = document.getElementById('memberContainer');
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+    // Function to display grid view
+    function displayGridView() {
+        memberContainer.classList.remove('list');
+        memberContainer.classList.add('grid');
+    }
 
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+    // Function to display list view
+    function displayListView() {
+        memberContainer.classList.remove('grid');
+        memberContainer.classList.add('list');
+    }
+
+    // Set default view (grid)
+    displayGridView();
+
+    // Add click event listener for grid button
+    gridButton.addEventListener('click', function () {
+        displayGridView();
+    });
+
+    // Add click event listener for list button
+    listButton.addEventListener('click', function () {
+        displayListView();
+    });
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
-}
