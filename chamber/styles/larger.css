@@ -178,12 +178,6 @@
         min-height: 500px;
         margin: 0;
     }
-    /* Add these styles for grid view */
-    /* Add these styles for list view */
-    .list section {
-        display: flex;
-        flex-direction: column;
-    }
     .list section {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
