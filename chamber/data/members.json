@@ -1,0 +1,14 @@
+{
+  "members": [
+    {
+      "name": "Company A",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    },
+    // Repeat similar entries for other members
+  ]
+}
