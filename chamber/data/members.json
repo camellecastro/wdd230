@@ -9,6 +9,61 @@
       "membershipLevel": "Gold",
       "additionalInfo": "Lorem ipsum"
     },
-    // Repeat similar entries for other members
+    {
+      "name": "Company B",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    },
+    {
+      "name": "Company C",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    },
+    {
+      "name": "Company D",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    },
+    {
+      "name": "Company E",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    },
+    {
+      "name": "Company F",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    },
+    {
+      "name": "Company G",
+      "address": "123 Main St, City",
+      "phone": "+1 234 567 8901",
+      "website": "http://www.companyA.com",
+      "image": "companyA.jpg",
+      "membershipLevel": "Gold",
+      "additionalInfo": "Lorem ipsum"
+    }
+    
+
   ]
 }
