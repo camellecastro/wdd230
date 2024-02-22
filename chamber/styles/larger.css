@@ -163,5 +163,15 @@
     .join h2 {
         margin: 0;
     }
+
+
+    /* DIRECTORY */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+    }
+
 }
 

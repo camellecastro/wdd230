@@ -630,3 +630,112 @@ h2.level {
     color: #fff;
 }
 
+/* DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY DIRECTORY  */
+/* 
+.directory main container
+div .directory-title
+.menu contains h2 and buttons with id grid and list 
+
+div .grid #memberContainer
+section
+h2
+p
+p
+a
+p
+img
+p
+
+div .supportlocal bottom div
+*/
+
+.menu {
+	display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+}
+
+.menu button {
+    border: none;
+    background-color: transparent;
+	padding: 1rem;
+}
+
+.menu button img {
+    width: 30px;
+    height: 30px;
+}
+
+.button {
+    display: flex;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	background-color: #eee;
+    min-height: 500px;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    margin: 1rem;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	box-shadow: 0 0 10px #333;
+    height: auto;
+    margin: 0 auto;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h2 {
+	font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    letter-spacing: 1pt;
+}
+
+section p {
+    font-size: .8rem;
+    padding: 10px 0 10px 0;
+}
+
+section a {
+	color: #135267;
+    font-size: .8rem;
+}

@@ -15,7 +15,7 @@ async function getMembers() {
 
 
 function displayMembers(members) {
-    const cards = document.getElementById('#memberContainer');
+    const cards = document.getElementById('memberContainer');
 
     cards.innerHTML = "";
 
@@ -38,13 +38,13 @@ function displayMembers(members) {
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '600');
-        image.setAttribute('height', '600')
+        image.setAttribute('width', '300');
+        image.setAttribute('height', '300')
 
         // contact info
         info.textContent = `${member.additionalInfo}`;
-        address.textContent = `${member.address}`;
-        phone.textContent = `${member.phone}`;
+        address.textContent = `Address: ${member.address}`;
+        phone.textContent = `Phone: ${member.phone}`;
 
         //links
         website.href = `${member.website}`;
@@ -60,66 +60,27 @@ function displayMembers(members) {
         card.appendChild(phone);
         card.appendChild(website);
 
-        cards.appendChild(card);
+      cards.appendChild(card);
     });
 }
 
 getMembers();
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".grid");
 
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-// document.addEventListener("DOMContentLoaded", async function () {
-//     try {
-//         const data = await apiFetch('data/members.json');
-//         displayMembers(data.members);
-//     } catch (error) {
-//         console.error('Error fetching data:', error);
-//     }
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
 
-//     function displayMembers(members) {
-//         const memberContainer = document.getElementById('memberContainer');
+listbutton.addEventListener("click", showList); // example using defined function
 
-//         members.forEach(member => {
-//             const memberCard = document.createElement('div');
-//             memberCard.classList.add('member-card');
-
-//             const img = document.createElement('img');
-//             img.src = `images/${member.image}`;
-//             img.alt = member.name;
-
-//             const nameHeading = document.createElement('h3');
-//             nameHeading.textContent = member.name;
-
-//             const addressParagraph = document.createElement('p');
-//             addressParagraph.textContent = `Address: ${member.address}`;
-
-//             const phoneParagraph = document.createElement('p');
-//             phoneParagraph.textContent = `Phone: ${member.phone}`;
-
-//             const websiteParagraph = document.createElement('p');
-//             websiteParagraph.textContent = `Website: ${member.website}`;
-
-//             const levelParagraph = document.createElement('p');
-//             levelParagraph.textContent = `Membership Level: ${member.membershipLevel}`;
-
-//             // Add additional information as needed
-
-//             memberCard.appendChild(img);
-//             memberCard.appendChild(nameHeading);
-//             memberCard.appendChild(addressParagraph);
-//             memberCard.appendChild(phoneParagraph);
-//             memberCard.appendChild(websiteParagraph);
-//             memberCard.appendChild(levelParagraph);
-
-//             memberContainer.appendChild(memberCard);
-//         });
-//     }
-
-//     async function apiFetch(url) {
-//         const response = await fetch(url);
-//         if (!response.ok) {
-//             throw new Error(`Error fetching data: ${response.statusText}`);
-//         }
-//         return response.json();
-//     }
-// });
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
