@@ -185,6 +185,22 @@
         padding: 1rem;
     }
 
+    /* spotlight */
+    /* SPOTLIGHT  */
+div#spotlightContainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.spotlight-members p {
+    margin: 0;
+}
+
+.spotlight-members img {
+    margin-top: 1rem;
+    border-radius: 0 0 13px 13px;
+}
+
 
 }
 

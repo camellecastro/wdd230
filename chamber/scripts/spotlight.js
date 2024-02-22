@@ -42,7 +42,8 @@ async function displaySpotlightAdvertisements() {
                 // Display spotlight members
                 selectedMembers.forEach(member => {
                     const spotlightElement = document.createElement('div');
-                    spotlightElement.classList.add('spotlight-member'); // Add a class for styling
+                    spotlightElement.classList.add('card');
+                    spotlightElement.classList.add('spotlight-members');// Add a class for styling
 
                     spotlightElement.innerHTML = `
                         <h3>${member.name}</h3>

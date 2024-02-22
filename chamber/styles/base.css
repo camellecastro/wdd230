@@ -297,7 +297,7 @@ a#menu.show{
     margin: 15px 30px;
 }
 .spotlight-container picture img {
-    margin: 0 .5rem;
+    margin: .5rem 0;
     border-radius: 10px;
     width: 100%;  
     object-fit: cover;
@@ -362,7 +362,10 @@ footer a:hover {
     color: #ffff;
 }
 
-.spotlight-img,
+img.spotlight-img {
+    margin: 0;
+    width: 100%;
+}
 .event-img {
     height: 50px;
     width: auto;
@@ -723,7 +726,7 @@ div .supportlocal bottom div
 	background-color: #ddd;
 }
 
-.grid section h2 {
+.grid section h2{
 	font-size: 1.5rem;
     margin: 1rem 0 0 0;
     letter-spacing: 1pt;
@@ -777,4 +780,18 @@ h3.town {
     margin: 0;
     padding: 0;
     font-size: smaller;
+}
+
+/* SPOTLIGHT  */
+.spotlight-container {
+    align-items: center;
+    margin: 0 auto;
+}
+.spotlight-members p {
+    margin: 0;
+}
+
+.spotlight-members img {
+    margin-top: 1rem;
+    border-radius: 0 0 13px 13px;
 }
