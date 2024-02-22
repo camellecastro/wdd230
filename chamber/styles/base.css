@@ -742,3 +742,39 @@ div .supportlocal bottom div
 .supportlocal p {
     padding-top: 0;
 }
+
+/* weather */
+#information {
+    text-align: center;
+}
+
+#information img {
+    margin: 0 auto;
+}
+
+#temperature {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #135267;
+}
+
+p#description {
+    color: #135267;
+    margin-bottom: 0;
+}
+
+h3.town {
+    margin: 2px 0 0 0;
+}
+
+#forecastContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem;
+}
+
+#forecastContainer p {
+    margin: 0;
+    padding: 0;
+    font-size: smaller;
+}

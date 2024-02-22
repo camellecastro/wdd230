@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Naguilian Chamber of Commerce - Home | WDD 230 Web Frontend Development I Project
+            Naguilian Chamber of Commerce - Home 
         </title>
         <meta name="description" content="Naguilian Chamber of Commerce Website Home Page for WDD 230 - Web Frontend Development I Website Project">
         <meta name="author" content="Camelle Castro">
@@ -25,19 +25,19 @@
             <img class="logo" src="images/logo.webp" alt="icon and name of naguilian chamber of commerce">
             <img class="logo-name" src="images/logo-name.webp" alt="logo name">
             <div class="social-icons">
-                <a href="#">
+                <a href="https://facebook.com" target="_blank">
                     <img class="icons" src="images/facebook.webp" alt="facebook logo">
                 </a>
-                <a href="#">
+                <a href="https://twitter.com" target="_blank">
                     <img class="icons" src="images/twitter.webp" alt="twitter logo">
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/" target="_blank">
                     <img class="icons" src="images/linkedin-logo.webp" alt="linkedin logo">
                 </a>
-                <a href="#">
+                <a href="https://youtube.com" target="_blank">
                     <img class="icons" src="images/youtube.webp" alt="youtube logo">
                 </a>
-                <a href="#">
+                <a href="https://instagram.com" target="_blank">
                     <img class="icons" src="images/instagram.webp" alt="instagram logo">
                 </a>
             </div>
@@ -67,7 +67,7 @@
                         <h1>Elevate Your Business Journey With Naguilian Chamber of Commerce</h1>
                         <p>Join a dynamic community of local entrepreneurs! Unleash new opportunities, forge valuable connections, and stay ahead of the curve with exclusive events and insights. Your success story begins here – Become a member today!</p>
                         <!-- call to action -->
-                        <a href="#" class="cta-button">Join</a>
+                        <a href="join.html" class="cta-button">Join</a>
                     </div>
                 </div>
             </section>
@@ -78,6 +78,15 @@
                 </section>
                 <section class="card weather section-2">
                     <h2>WEATHER TODAY</h2>
+                    <div id="information">
+                        <h3 class="town">Naguilian, La Union</h3>
+                        <img id="graphic" src="" alt="">
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <h3>Weather Forecast</h3>
+                        <div id="forecastContainer">
+                        </div>
+                    </div>
                 </section>
             </div>
             <section class=" section-3">
@@ -92,19 +101,19 @@
                         <img src="images/discover.webp" alt="magnifying glass with bulb inside">
                         <h3>Discover: Uncover Opportunities Beyond Limits</h3>
                         <p>Explore a world of possibilities! The gateway to exclusive events, forums, and resources tailored to elevate your business. Ignite innovation, stay informed, and unlock hidden potentials. Your journey to success starts with discovery!</p>
-                        <a class="cta-btn" href="#">Learn more</a>
+                        <a class="cta-btn" href="discover.html">Learn more</a>
                     </div>
                     <div class="actions action-2">
                         <img src="images/directory.webp" alt="simple file folder illustration">
                         <h3>Directory: Connect with the Business Pulse of Naguilian</h3>
                         <p>Navigate the thriving business landscape of Naguilian effortlessly. Our comprehensive directory is a powerful tool for connecting with local entrepreneurs. Find collaborators, clients, and partners seamlessly.</p>
-                        <a class="cta-btn" href="">See more</a>
+                        <a class="cta-btn" href="directory.html">See more</a>
                     </div>
                     <div class="actions action-3">
                         <img src="images/join.webp" alt="joing puzzel illustration">
                         <h3>Join: Be the Catalyst of Business Synergy</h3>
                         <p>Ready to amplify your business influence? Join the Naguilian Chamber of Commerce and become part of a dynamic community business synergy. Gain access to exclusive events and network of like-minded professionals.</p>
-                        <a class="cta-btn" href="">Learn more</a>
+                        <a class="cta-btn" href="join.html">Learn more</a>
                     </div>
                 </div>
             </section>
@@ -201,5 +210,7 @@
         </footer>
         <script src="scripts/getDates.js"></script>
         <script src="scripts/hamburgerMenu.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/spotlight.js"></script>
     </body>
 </html>
