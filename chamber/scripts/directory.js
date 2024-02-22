@@ -32,7 +32,7 @@ function displayMembers(members) {
 
         // name and membership level
         name.textContent = `${member.name}`;
-        memberLevel.textContent = `${member.membershipLevel}`;
+        memberLevel.textContent = `${member.membershipLevel} Member`;
 
         // image 
         image.setAttribute('src', member.image);
