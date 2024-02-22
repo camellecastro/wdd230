@@ -49,7 +49,7 @@ async function displaySpotlightAdvertisements() {
                         <p>${member.additionalInfo}</p>
                         <p>${member.address}</p>
                         <p>Phone: ${member.phone}</p>
-                        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+                        <p>Website: <a href="${member.website}" target="_blank">Official Website</a></p>
                         <img src="${member.image}" alt="${member.name} Image">
                     `;
 
