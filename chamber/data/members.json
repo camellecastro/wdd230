@@ -1,67 +1,67 @@
 {
   "members": [
     {
-      "name": "Company A",
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "name": "Sabon Depot",
+      "address": "Bambao Square, Ricarte St, Ortiz, Naguilian, La Union, Philippines",
+      "phone": "+639190915276",
+      "website": "https://sabondepotjdg.com/",
+      "image": "images/SABONDEPOT.webp",
+      "membershipLevel": "Gold Member",
+      "additionalInfo": "Cleaning products supplier in Naguilian La Union"
     },
     {
-      "name": "Company B",
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "name": "Magnolia Naguilian",
+      "address": "General P. Florendo St, Naguilian, La Union, Philippines",
+      "phone": "+63 926 934 2689",
+      "website": "https://paul-francis-chicken-farm.business.site",
+      "image": "images/MAGNOLIA.webp",
+      "membershipLevel": "Gold Member",
+      "additionalInfo": "Chicken Wholesaler in Naguilian, La Union"
     },
     {
-      "name": "Company C",
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "name": "Banda Concrete Products",
+      "address": "National Highway, Brgy. Guesset, Naguilian, La Union, Philippines",
+      "phone": "+63 917 774 0297",
+      "website": "https://www.facebook.com/bandaconcreteproducts",
+      "image": "images/BCP.webp",
+      "membershipLevel": "Silver Member",
+      "additionalInfo": "Banda Concrete Producst produces quality standard machine-made hollow blocks."
     },
     {
-      "name": "Company D",
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "name": "Klear Aqua",
+      "address": "Naguilian Road, Dal-lipaoen, Naguilian, La Union",
+      "phone": "+63 945 652 4380",
+      "website": "https://www.facebook.com/klearaqua",
+      "image": "images/KLEARAQUA.webp",
+      "membershipLevel": "Bronze Member",
+      "additionalInfo": "Water refilling station and bottled water supplier."
     },
     {
-      "name": "Company E",
+      "name": "La Union Electric Cooperative",
       "address": "123 Main St, City",
       "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "website": "http://luelco.com.ph/",
+      "image": "images/LUELCO.webp",
+      "membershipLevel": "Bronze Member",
+      "additionalInfo": "Electric Utility Company"
     },
     {
-      "name": "Company F",
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "name": "Naguilian Livelihood Producers Association",
+      "address": "Naguilian Municipal Hall, Ortiz, Naguilian, La Union, Philippines",
+      "phone": "+63 946 652 4169",
+      "website": "https://www.facebook.com/profile.php/?id=61552076549310",
+      "image": "images/NLPA.webp",
+      "membershipLevel": "Non-profit Member",
+      "additionalInfo": "Food processing company in Naguilian, La Union, Philippines."
     },
     {
-      "name": "Company G",
-      "address": "123 Main St, City",
-      "phone": "+1 234 567 8901",
-      "website": "http://www.companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": "Gold",
-      "additionalInfo": "Lorem ipsum"
+      "name": "PESO Naguilian",
+      "address": "2/F Naguilian Municipal Hall, Ortiz, Naguilian, La Union, Philippines",
+      "phone": "+63 935 685 3410",
+      "website": "https://www.facebook.com/PESONaguilianLaUnion",
+      "image": "images/PESO.webp",
+      "membershipLevel": "Non-profit Member",
+      "additionalInfo": "Public Employment Services"
     }
     
 

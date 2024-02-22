@@ -43,8 +43,6 @@ function displayResults(data) {
     myTemperature.innerHTML = `${Math.round(data.main.temp)}&deg;F - ${joinedDescriptions}`; // Format to show zero decimal points
     const graphic = `//openweathermap.org/img/w/${data.weather[0].icon}.png`;
 
-    
-
     myGraphic.setAttribute('src', graphic);
     myGraphic.setAttribute('alt', joinedDescriptions); // Use joined descriptions
 }
