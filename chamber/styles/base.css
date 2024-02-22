@@ -673,7 +673,7 @@ div .supportlocal bottom div
     display: flex;
 }
 
-section {
+.grid section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 	background-color: #eee;
@@ -707,10 +707,6 @@ section {
 	padding: 0.25rem;
 }
 
-.list section > * {
-	margin: 0 1rem;
-}
-
 .list section img {
 	display: none; /* smaller viewports only */
 }
@@ -724,18 +720,18 @@ section {
 	background-color: #bed;
 }
 
-section h2 {
+.grid section h2 {
 	font-size: 1.5rem;
     margin: 1rem 0 0 0;
     letter-spacing: 1pt;
 }
 
-section p {
+.grid section p {
     font-size: .8rem;
     padding: 10px 0 10px 0;
 }
 
-section a {
+.grid section a {
 	color: #135267;
     font-size: .8rem;
 }
