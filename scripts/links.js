@@ -11,6 +11,7 @@ async function getLinks() {
   try {
     const response = await fetch(linksURL);
     const data = await response.json();
+    console.log(data);
     displayLinks(data.weeks);
   } catch (error) {
     console.error("Error fetching links data:", error);
