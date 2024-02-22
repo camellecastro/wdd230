@@ -7,9 +7,9 @@ const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
 
 const myKey = "735ca3cf4612c125247796e89000e04b"
-const myLat = "553.54659"
-const myLong = "-113.49020"
-
+const myLat = "53.54599412259574"
+const myLong = "-113.49767446541047"
+//53.54599412259574, -113.49767446541047
 
 const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
 
@@ -35,13 +35,16 @@ function capitalizeFirstLetter(str) {
 }
 
 function displayResults(data) {
-    myTemperature.innerHTML = `${Math.round(data.main.temp)}&deg;F`; // Format to show zero decimal points
-    const myGraphic = `//openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    myTown.innerHTML = data.name;
 
     let myDescription = data.weather.map((event) => capitalizeFirstLetter(event.description));
-    let joinedDescriptions = descriptions.join(', '); // Join all weather descriptions
+    let joinedDescriptions = myDescription.join(', '); // Join all weather descriptions
 
-    weatherIcon.setAttribute('src', myGraphic);
-    weatherIcon.setAttribute('alt', joinedDescriptions); // Use joined descriptions
-    captionDesc.textContent = joinedDescriptions;
+    myTemperature.innerHTML = `${Math.round(data.main.temp)}&deg;F - ${joinedDescriptions}`; // Format to show zero decimal points
+    const graphic = `//openweathermap.org/img/w/${data.weather[0].icon}.png`;
+
+    
+
+    myGraphic.setAttribute('src', graphic);
+    myGraphic.setAttribute('alt', joinedDescriptions); // Use joined descriptions
 }

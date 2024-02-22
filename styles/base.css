@@ -193,6 +193,24 @@ main h1 {
     padding: 15px;
 }
 
+#information {
+    text-align: center;
+    align-items: center;
+}
+
+#information h3 {
+    margin-top: 2rem;
+}
+
+img#graphic {
+    display: block;
+    margin: 0 auto;
+}
+
+p#temperature {
+    padding-top: 0;
+}
+
 iframe {
     display: block;
     margin: 0 auto;
