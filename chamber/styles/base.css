@@ -859,3 +859,7 @@ div#popupBanner.popup {
     color: #fff;
     background-color: #04364A;
 }
+
+div.card {
+    margin: 0;
+}
